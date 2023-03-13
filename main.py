@@ -29,8 +29,6 @@ def find_listings(search):
             price = 'N/A'
         if is_similar(search, title):
             results.append([title,price])
-            print(title)
-            print(price)
             data_frame = pd.DataFrame(results, columns=['Title', 'Price'])
     data_frame.to_csv('results.csv')
 
