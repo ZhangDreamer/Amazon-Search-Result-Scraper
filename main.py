@@ -23,13 +23,14 @@ def find_listings(search):
     for listing in listings:
         title = listing.find('h2').a.span.text
         price = listing.find('span', class_='a-price')
+        star = listing.find('span', class_="a-icon-alt").text.split()[0]
         if price is not None:
             price = price.span.text
         else:
             price = 'N/A'
         if is_similar(search, title):
-            results.append([title,price])
-            data_frame = pd.DataFrame(results, columns=['Title', 'Price'])
+            results.append([title,price,star])
+            data_frame = pd.DataFrame(results, columns=['Title', 'Price', 'Rating out of 5'])
     data_frame.to_csv('results.csv')
 
 search = input('What do you want to search? \n')
