@@ -4,16 +4,16 @@ This is a simple Python script that uses web scraping techniques to extract prod
 
 ## Installation
 
-Before running the script, you need to install the following packages:
+Before running the script, you need to install [Python](https://www.python.org/downloads/) and the following packages:
 
 - pandas
 - requests
 - BeautifulSoup4
-- lxml
+- fuzzywuzzy
 
-You can install these packages using pip by running the following command:
+You can install these packages using pip by running the following command in your cmd:
 
-pip install pandas requests BeautifulSoup4 fuzzywuzzy
+pip install -r /path/to/requirements.txt
 
 
 ## Usage
