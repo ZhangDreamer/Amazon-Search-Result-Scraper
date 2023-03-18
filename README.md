@@ -18,8 +18,7 @@ pip install pandas requests BeautifulSoup4 fuzzywuzzy
 
 ## Usage
 
-To use the script, simply run the `amazon_scraper.py` file and enter the search query when prompted. The script will then extract the product information from the search results and save it to a CSV file named `products.csv` in the same directory as the script.
-python main.py
+To use the script, simply run the `main.py` file and enter the search query when prompted. The script will then extract the product information from the search results and save it to a CSV file named `results.csv` in the same directory as the script.
 
 
 ## Example Output
